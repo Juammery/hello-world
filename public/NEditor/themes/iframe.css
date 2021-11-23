@@ -1,0 +1,11 @@
+/*可以在这里添加你自己的css*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+input {
+ border: none;
+ border-bottom: 1px solid #000;
+ font-family: 宋体, SimSun;
+ font-size: 16px;
+}

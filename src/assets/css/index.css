@@ -1,0 +1,917 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+.clearfix::after {
+  content: ".";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  height: 0;
+  zoom: 1;
+}
+#app {
+  /* position: fixed; */
+  width: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+  height: 100%;
+  /* background-image: url("../img/bg5.jpg"); */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+html,body{
+  /*background: rgb(248, 248, 248);*/
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  /*background-image: url("../img/bg4.png");*/
+  /*background-size: 100% 100%;*/
+  background-repeat: no-repeat;
+  padding:0px;
+  margin:0px;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none; /* you could also put this in a class */
+  -webkit-user-select:none;/* and add the CSS class here instead */
+  -ms-user-select:none;
+  user-select:none;/**禁止选中文字*/
+  overflow: hidden;
+ }
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+.el-checkbox{
+  color:#FFF !important
+}
+.main-container {
+  /*background-image: url("../img/bg4.png");*/
+  min-width: 1200px;
+}
+.home-page {
+  /* width: 100vw; */
+  min-width: 1200px;
+}
+.page-header {
+  /* width: 100vw; */
+  /* background-color: #06223a; */
+  /* height: 70px; */
+  /*background-image: url("../img/headbg.png");*/
+  background-size: 100% 100%;
+}
+.page-header img{
+   height: 50px;
+   margin-top: 10px;
+   cursor: pointer;
+}
+.page-bg{
+  /*background-image: url("../img/bg4.png");*/
+}
+.header-size{
+  margin-left: 10px;
+  color: #FFF;
+  font-size: 20px;
+  cursor: pointer;
+}
+.page-container .el-input__inner {
+  background: transparent;
+  border: none;
+  /*color: #fff;*/
+  color: #282828;
+}
+.page-container .el-input {
+  color: #fff;
+}
+.page-container .el-button {
+  background: transparent;
+  border: none;
+}
+.header-search {
+  width: 600px;
+  margin: 0 auto;
+
+}
+
+.input-with-select {
+  width: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.input-with-select .el-input-group__prepend {
+  background-color: #fff;
+}
+
+.content {
+  height: 550px;
+  margin: 20px auto;
+  border-radius: 10px;
+  display: flex;
+  background-size: 1100px 574px;
+  background-repeat: no-repeat ;
+}
+.content ul {
+  /*height: 550px;*/
+  overflow: auto;
+  /* padding: 4.5rem 0 4.5rem 5.6rem; */
+  display: flex;
+  /*width: 48rem;*/
+  flex-wrap: wrap;
+}
+.content ul::-webkit-scrollbar{
+  width:6px;
+}
+.content ul::-webkit-scrollbar-thumb{
+  background-color: #C1C1C1;
+  border-radius: 5px;
+}
+.content ul::-webkit-scrollbar-track-piece {
+  background: rgba(248, 248, 255, 0.1);
+  border-radius: 5px;
+}
+
+.content li:not[class] {
+  width: 10rem;
+  height: 10rem;
+  display: inline-block;
+  margin: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.content li[class] {
+  display: inline-block;
+  cursor: pointer;
+}
+.circlePic:hover {
+    animation: rotatefresh 2s;
+}
+@keyframes rotatefresh {
+  from { transform: rotate(0deg) }
+  to {
+      transform: rotate(360deg);
+      transition: all 1s;
+  }
+}
+
+.content-nav {
+  height: 127px;
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+  position: relative;
+}
+
+.two-header {
+  width: 100%;
+  height: 100px;
+  background-image: url("../img/form.jpg");
+  background-size: 100% 100%;
+  position: relative;
+}
+.two-header {
+  text-align: center;
+  height: 150px;
+  /* padding-top: 20px; */
+}
+.two-header p {
+  color: #fff;
+  padding-top:50px;
+  font-size: 18px;
+}
+.two-title {
+  color: #cbb486;
+}
+
+.two-header .el-button {
+  margin-top: 40px;
+  width: 160px;
+  background-color:rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+
+.two-step {
+  width: 1200px;
+  margin: auto;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -600px;
+}
+.el-step__head {
+  display: none;
+}
+.el-steps--simple {
+  background: rgba(39,65,124,0.5);
+}
+.el-step__title.is-finish {
+  color: #fff;
+  font-weight: 700;
+}
+
+.el-step__title.is-process {
+  color: #cbb486;
+  font-weight: 700;
+}
+.el-step__title.is-wait {
+  color: #fff;
+  font-weight: 700;
+}
+.noprint{
+  width: 100vw;
+}
+
+.noprint .left-detail{
+  width: 200px;
+}
+.left-bar {
+  max-height: 100%;
+}
+ .left-bar li{
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color:#fff;
+   font-weight: 600;
+  border-radius: 0 25px 25px 0;
+  background-repeat: no-repeat;
+  background-size: 200px  100%;
+  margin-top: 20px;
+}
+.left-bar li:hover {
+  /*background-image: url("../img/leftselect.png");*/
+  /*cursor: pointer;*/
+  background: #cbb486;
+  color: #fff;
+}
+.three-content-large{
+  height: 90px;
+  word-wrap:break-word;
+}
+.three-content {
+  /*width: 70%;*/
+  /* width: 67%; */
+  /* float: right; */
+  box-sizing: border-box;
+  /* margin:0% 10% 0 0; */
+  /*max-height: 700px;*/
+  /*min-height: 700px;*/
+  /*max-height: 560px;*/
+  min-height: 63vh;
+  /*background-image: url("../img/box3.png");*/
+  background: #E4E9EF;
+  background-color: rgba(255,255,255, 0.9);
+border-radius: 5px;
+  /*background-color: rgba(228,233,239,0.4);*/
+  box-shadow: 0px 0px 15px 0px rgba(154, 112, 50, 0.26);
+  /* background-size: 100% 101%; */
+  /*background-repeat: no-repeat;*/
+  /* overflow-y:scroll; */
+  /* padding: 15px 10px; */
+}
+.scorll_content {
+  /* margin-left: -10px; */
+  width: 100%;
+  /*max-height: 700px;*/
+  /*max-height: 560px;*/
+  overflow: auto;
+}
+.scorll_content::-webkit-scrollbar{
+  /*width:10px;*/
+  /*margin-left:20px;*/
+  width:6px;
+}
+.scorll_content::-webkit-scrollbar-thumb{
+  /*background-image: linear-gradient(#00e6ec, #01e2c7, #01dfa7);*/
+  /*background-color: #FF6F00;*/
+  /*border-radius: 5px;*/
+  background-color: #C1C1C1;
+  border-radius: 5px;
+}
+.scorll_content::-webkit-scrollbar-track-piece {
+  /*background: rgba(248, 248, 255, 0.1);*/
+  /*border-radius: 5px;*/
+  /*background-color: #C1C1C1;*/
+  /*border-radius: 5px;*/
+}
+.three-content .supermarket,.five-content .supermarket, .main-business-form{
+  /*padding: 20px 20px;*/
+  font-size: 16px;
+  line-height: 2;
+  /*width: 90%;*/
+  /*margin:0 auto;*/
+  box-sizing: border-box;
+  background-color:#fff;
+  border-radius: 5px;
+  padding: 4px  4px 4px 15px;
+  margin: 10px;
+  position:relative;
+}
+.three-content .supermarket .fl div {
+  max-width:60vw;
+}
+
+.three-form {
+  /*margin-left: 0px;*/
+  /* margin-left: 20px; */
+  /* margin-top: 30px; */
+
+}
+.three-form .el-form-item__label {
+  /*color: #05d7eb;*/
+}
+.three-form  .el-radio {
+  color: #fff;
+}
+.liColor {
+  background: #4a66a5;
+  color: #fff;
+}
+.revise {
+  position: absolute;
+  bottom: 20px;
+  left:55px;
+  color: #05d7eb;
+}
+.leftbtn {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+}
+.leftup {
+  position: relative;
+  bottom: 40px;
+  left:45px;
+  color: #05d7eb;
+}
+
+.rightbtn {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+}
+.next-btn{
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:white !important;
+}
+.next-btn p{
+  color: #fff;
+}
+.rightnext {
+  position: absolute;
+  bottom: 20px;
+  left:45px;
+  color: #fff;
+}
+.submittext {
+  position: relative;
+  bottom: 40px;
+  left:55px;
+  color: #05d7eb;
+}
+.revisetext {
+  position: relative;
+  bottom: 40px;
+  left:55px;
+  color: #05d7eb;
+}
+.submitmsg {
+  position: relative;
+  bottom: 40px;
+  left:40px;
+  color: #fff;
+}
+.resettext {
+  position: relative;
+  bottom: 40px;
+  left:7px;
+  color: #05d7eb;
+}
+.paperdialog .el-dialog__header {
+  text-align: center;
+  /* background-color:#b5b8bb; */
+}
+.paperdialog .el-dialog__title  {
+  font-size: 24px;
+  color:#fff;
+  font-weight: 600;
+}
+.paperdialog .el-dialog__footer {
+  text-align: center;
+  /* background-color: #b5b8bb; */
+}
+.paperdialog .el-dialog__body {
+  background-image: url("../img/form.jpg");
+}
+
+/* .upbtn {
+  background-image: url("../img/leftbtn.png");
+  background-size: 90px 50px;
+  color: #fff;
+} */
+
+/*第四个页面*/
+.four-content {
+  width: 100%;
+  height: 700px;
+  overflow-y: scroll;
+  padding: 10px;
+  /* overflow:hidden; */
+
+}
+.bos {
+}
+/* .four-content::-webkit-scrollbar{
+  width:10px;
+  height:8px;
+ }
+ .four-content::-webkit-scrollBar-hightLight-color{
+   color:#05d7eb;
+ }
+.four-content::-webkit-scrollbar-track-piece {
+  background-color:#09345d;
+} */
+.four-content .supermarket{
+  height: 30px;
+}
+.el-form-item__content {
+  /*color:#fff;*/
+  color:#666666;
+}
+/* .four-content table tr td {
+  background-color: rgba(0,0,0,0.1);
+} */
+
+.four-content h3{
+  display: inline-block;
+  color: #cbb486;
+}
+
+.four-content .supermarket {
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 2;
+}
+.four-content .el-input .el-input__inner {
+  background-color: transparent;
+  color: #fff;
+}
+.four-content .el-button--primary {
+  background-color: #e1e8fa;
+  border-color: #e1e8fa;
+  color: #666;
+  font-weight: 900;
+  font-size: 18px;
+}
+.el-radio {
+  margin-right: 15px;
+}
+.subject .el-button {
+  margin: 20px;
+}
+.four-content .el-radio .el-radio__label {
+  color: #fff;
+}
+
+.el-input__inner {
+  background-color:transparent !important;
+  /*color: white;*/
+  color: #282828;
+}
+.el-date-editor .el-range-input {
+  background-color:transparent !important;
+  color: #282828;
+}
+/*第五个页面*/
+.five-content {
+  width: 100%;
+  /*height: 560px;*/
+  /* padding: 0 10px; */
+  /* margin-left: 5px; */
+}
+.gen-content {
+  /* width: 100%; */
+  /*height: 700px;*/
+  padding: 0 10px;
+  /* margin-left: 5px; */
+}
+/* .five-content .supermarket{
+  height: 30px;
+} */
+/* .five-content::-webkit-scrollbar{
+  width:10px;
+  height:8px;
+ }
+ .five-content::-webkit-scrollBar-hightLight-color{
+   color:red;
+ }
+ .five-content::-webkit-scrollbar-track-piece {
+  background-color:#09345d;
+} */
+.five-content h3 {
+  display: inline-block;
+  color: #05d7eb;
+}
+.five-content h4 {
+  display: inline-block;
+  color: #282828;
+}
+.gen-content h3 {
+  display: inline-block;
+  /*color: #05d7eb;*/
+  color: #F86C00;
+}
+.gen-content h4 {
+  display: inline-block;
+  /*color: #05d7eb;*/
+  color: #F86C00;
+}
+
+/* .five-content .form-component {
+  background-color: rgba(0,0,0,0.1);
+} */
+.five-content .supermarket {
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 2;
+}
+.gen-content .supermarket {
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.five-content .form-component .form-container .el-form .el-input .el-input__inner {
+  background-color: transparent;
+  /* border: 0; */
+  color: #fff;
+}
+.five-content .form-component .form-container .el-form .el-date-editor {
+  background-color: transparent;
+  /* border: 0; */
+  color: #fff;
+}
+.five-content .form-component .form-container .el-form .el-range-input {
+  background-color: transparent;
+  /* border: 0; */
+  color: #fff;
+}
+.five-content .form-component .form-container .el-form .el-range-separator {
+  color: #fff;
+}
+.five-content .el-form  .el-input-number__decrease {
+  background-color: transparent;
+  /* color: #fff; */
+}
+.five-content .el-form .el-input-number__increase {
+  background-color: transparent;
+  /* color: #fff; */
+}
+.five-content .el-button {
+  background-color: #00e3ca !important;
+}
+.five-content .el-button .el-icon-edit {
+  color: #fff;
+}
+.five-content .form-container .main-title {
+  color: #fff;
+}
+.five-content .form-container .sub-title {
+  color: #fff;
+}
+.five-content .el-form-item__label {
+  /*color: #fff;*/
+  color: #282828;
+}
+.five-content  .el-radio__label {
+  color: #666 !important;
+  
+}
+.five-content .el-button--primary {
+  background-color: #e1e8fa;
+  border-color: #e1e8fa;
+  color: #666;
+  font-weight: 900;
+  font-size: 18px;
+}
+/*主题名称*/
+.themeName-box{
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* padding: 10px; */
+  /* position: absolute; */
+  margin-bottom: 60px;
+  /* margin-bottom: 100px; */
+ 
+}
+.themeName{
+  color:#8B614D;
+  text-align: center;
+  /* background-color: #cbb486; */
+  border-radius: 25px;
+  font-size: 18px;
+  /* margin-top: -80px; */
+  padding: 10px 30px;
+}
+/*页面上方内容 可修改的步骤 名称*/
+.edit-nav-bar{
+  /* font-size: 1.1rem; */
+  color:#8b614d;
+}
+.edit-nav-content{
+  width: 94%;
+  /*max-height: 70px !important;*/
+  /*overflow: scroll;*/
+  /*overflow-x: hidden;*/
+}
+/*第六个页面*/
+.six-content {
+  /* width: 70%;
+  height: 700px;
+  margin: 0 21%;
+  background-image: url("../img/box3.png");
+  background-size: 70vw 100%;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+  padding: 5px; */
+}
+.six-content::-webkit-scrollbar{
+  /*width:10px;*/
+  /*height:8px;*/
+  width:6px;
+ }
+/* .six-content::-webkit-scrollBar-hightLight-color{*/
+/*   color:red;*/
+/* }*/
+/* .six-content::-webkit-scrollbar-track-piece {*/
+/*  background-color:#09345d;*/
+/*}*/
+.six-content .container-table  .el-table__header .has-gutter {
+  background: transparent;
+}
+.six-content .container-table .el-table tr  {
+  background: transparent;
+}
+.six-content .el-table, .el-table__expanded-cell {
+  background-color: transparent;
+}
+
+.six-content .el-table th, .el-table tr {
+  background-color: transparent;
+}
+.six-content .el-table th, .el-table tr cell{
+  background-color: transparent;
+}
+
+.six-content .el-table  .el-table__body  tr:hover>td {
+   /* background-color: #0469a3!important;  */
+  background-color: rgba(0, 0, 0, 0.1)!important;
+}
+.el-table--striped .el-table__body tr.el-table__row--striped.current-row td,
+.el-table__body tr.current-row>td,
+.el-table__body tr.hover-row.current-row>td,
+.el-table__body tr.hover-row.el-table__row--striped.current-row>td,
+.el-table__body tr.hover-row.el-table__row--striped>td,
+.el-table__body tr.hover-row>td{
+      /* background-color: #0469a3!important;  */
+  background-color: rgba(0, 0, 0, 0.1)!important;
+}
+
+.six-content h3 {
+  display: inline-block;
+  color: #cbb486;
+}
+.is_error input{
+  border-color: #F56C6C
+}
+.six-content .supermarket {
+  padding: 10px 20px;
+}
+
+.six-content .el-button--primary {
+  background-color: #e1e8fa;
+  border-color: #e1e8fa;
+  color: #666;
+  font-weight: 900;
+  font-size: 18px;
+}
+.form-component div .el-form-item__label{
+  /*color: #05d7eb;*/
+  color:#EE772F;
+}
+
+.five-content .form-component .form-container .el-form .el-input .el-input__inner {
+  background-color: #27476e;
+}
+
+
+.printing {
+  background-color: #999 !important;
+  border-color: #999 !important;
+}
+.eight-content{
+  width: 1200px;
+  margin: auto;
+  background-image: url("../img/box3.png");
+  background-size: 1200px  100%;
+  background-repeat: no-repeat
+}
+/* 个体工商户的页面 */
+.seven-content{
+  width: 70vw;
+  height: 80vh;
+  margin: auto;
+  background-image: url("../img/box3.png");
+  background-size: 70vw  100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.seven-content div{
+  position: relative;
+  text-align: center;
+  padding-top:50px;
+  /* overflow-y: hidden */
+}
+.seven-content h6{
+  font-size: 30px;
+  margin-bottom: 50px;
+  line-height: 150px;
+  color:#fff;
+  text-align: center;
+
+
+}
+/*表格*/
+/* .ytable1 {
+  margin-left: 20px;
+} */
+
+.ytable1 h3 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.el-message-box__header {
+  background-color: #e1e8fa !important;
+}
+.el-message-box__content {
+  text-align: center !important;
+  font-size: 16px !important;
+}
+.el-message-box__btns {
+  text-align: center !important;
+}
+.el-message-box__btns .el-button--small {
+  font-size: 16px !important;
+  padding: 12px 20px;
+}
+.el-message-box__btns  .el-button--default,
+.el-message-box__btns  .el-button--default:hover,
+.el-message-box__btns  .el-button--default:focus {
+  background-color: #999;
+  color: #fff;
+  border: none;
+}
+.el-table__row:hover {
+  background-color: rgba(0, 0, 0, 0.1)!important;
+}
+.el-table--enable-row-hover .el-table__body tr:hover>td {
+  background-color: rgba(0, 0, 0, 0.1)!important;
+}
+.el-message-box__btns  .el-button--primary,
+.el-message-box__btns  .el-button--primary:hover,
+.el-message-box__btns  .el-button--primary:focus {
+  border: none;
+  background-color: #cbb486;
+}
+.supermarket .el-checkbox__inner{
+  width: 40px !important;
+  height: 40px !important;
+}
+.supermarket .el-checkbox__inner::after {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  content: "";
+  border: 1px solid #FFF;
+  border-left: 0;
+  border-top: 0;
+  height: 22px;
+  left: 13px;
+  position: absolute;
+  top: 2px;
+  -webkit-transform: rotate(45deg) scaleY(0);
+  transform: rotate(45deg) scaleY(0);
+  width: 11px;
+}
+.two-header .el-button{
+  cursor:auto;
+}
+.checkedChecked{
+  margin-top: 15px;
+}
+/* 签章 */
+.visa-dialog .el-dialog__header {
+  background-color: #e1e8fa !important;
+  font-size: 20px;
+  padding: 20px;
+}
+.visa-dialog .el-dialog__body {
+  padding: 0;
+}
+.visa-dialog .visa-main {
+  /* overflow: hidden; */
+  border: 1px solid #000;
+}
+.visa-dialog .visa-left {
+  padding: 20px;
+  width: 300px;
+  height: 100%;
+}
+.visa-dialog .visa-right {
+  overflow: hidden;
+  padding: 20px;
+  width: auto;
+  height: auto;
+  border-left: 1px solid #000;
+}
+.visa-dialog .el-dialog__footer {
+  background-color: #999;
+  position: fixed;
+  left:0px;
+  bottom:0px;
+  width: 100%;
+}
+.visa-dialog .el-dialog__footer .el-button {
+  background-color: #cbb486;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  padding: 10px 20px;
+}
+.visa-dialog .visa-left .el-input {
+  width: 100px;
+}
+
+
+/* 文件上传 */
+.grantvisa .el-message-box__header .el-message-box__title {
+  font-size: 20px;
+}
+.upload-dialog .el-dialog__header {
+  background-color: #e1e8fa !important;
+  font-size: 20px;
+  padding: 10px;
+}
+.upload-dialog .el-dialog__header .el-dialog__close i {
+  font-size: 20px;
+  font-weight:600;
+}
+.upload-dialog .el-dialog__body {
+  padding: 30px 20px 10px;
+}
+.upload-dialog .el-dialog__body .upload-demo {
+  text-align: center
+}
+.upload-dialog .el-upload-dragger {
+  border:1px dashed #cbb486;
+}
+.upload-dialog .el-dialog__footer {
+  text-align: center;
+}
+.upload-dialog .el-button span {
+  color: #fff;
+  font-size: 18px;
+}
+.upload-dialog .el-button--default {
+  background: #999;
+}
+.upload-dialog .el-button--primary {
+  background: #cbb486;
+  border: none;
+  margin-left:30px;
+}
+.el-tooltip__popper.is-dark {
+  max-width: 600px;
+  line-height: 20px;
+}

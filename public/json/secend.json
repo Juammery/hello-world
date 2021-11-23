@@ -1,0 +1,95 @@
+{
+    "code": 0,
+    "data": [
+        {
+            "id": 1,
+            "type": 1,
+            "name": "子判断名称",
+            "description": "我是描述我是描述",
+            "records": [],
+            "choice": [
+                {
+                    "name": "选项值1"
+                },
+                {
+                    "name": "选项值2"
+                },
+                {
+                    "name": "选项值3"
+                }
+            ],
+            "data": "",
+            "titleData": []
+        },
+        {
+            "id": 2,
+            "type": 2,
+            "name": "超市类型",
+            "description": "我是描述我是描述",
+            "records": [],
+            "choice": [
+                {
+                    "name": "小型超市"
+                },
+                {
+                    "name": "标准超市"
+                },
+                {
+                    "name": "大型超市"
+                }
+            ],
+            "dataArray": [],
+            "titleData": []
+        },
+        {
+            "id": 4,
+            "type": 2,
+            "name": "超市类型",
+            "description": "我是描述我是描述",
+            "records": [],
+            "choice": [
+                {
+                    "name": "超级型超市"
+                },
+                {
+                    "name": "非常超市"
+                },
+                {
+                    "name": "特别超市"
+                }
+            ],
+            "dataArray": [],
+            "titleData": []
+        },
+        {
+            "id": 5,
+            "type": 2,
+            "name": "超市类型",
+            "description": "我是描述我是描述",
+            "records": [],
+            "choice": [
+                {
+                    "name": "超市1"
+                },
+                {
+                    "name": "非常超市2"
+                },
+                {
+                    "name": "特别超市3"
+                }
+            ],
+            "dataArray": [],
+            "titleData": []
+        },
+        {
+            "id": 3,
+            "type": 3,
+            "name": "经营方式",
+            "description": "我是描述我是描述",
+            "records": [],
+            "choice": [],
+            "data": "",
+            "titleData": []
+        }
+    ]
+}

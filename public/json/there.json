@@ -1,0 +1,368 @@
+{
+    "code": 0,
+    "data": [
+        {
+            "id": 1,
+            "type": 1,
+            "name": "333333",
+            "description": "我是描述我是描述",
+            "choice": [
+                {
+                    "name": "选项值1"
+                },
+                {
+                    "name": "选项值2"
+                },
+                {
+                    "name": "选项值3"
+                }
+            ],
+            "linkList":[
+                {
+                  "inputName": "选项值1",
+                  "linkList": [1,2]
+                }
+            ],
+            "data": ""
+        },
+        {
+            "id": 2,
+            "type": 2,
+            "name": "超市类型",
+            "description": "我是描述我是描述",
+            "choice": [
+                {
+                    "name": "小型超市",
+                    "required": true
+                },
+                {
+                    "name": "标准超市"
+                },
+                {
+                    "name": "大型超市"
+                }
+            ],
+            "data": [],
+            "dataArray": []
+        },
+        {
+            "id": 57,
+            "type": 3,
+            "name": "联系人",
+            "description": "我是描述我是描述",
+            "choice": [],
+            "data": ""
+        },
+        {
+            "id": 4,
+            "type": 4,
+            "name": "數字",
+            "description": "我是描述我是描述",
+            "choice": [],
+            "data": "",
+            "min": "",
+            "max":""
+        },
+        {
+            "id": 5,
+            "type": 5,
+            "name": "時間點",
+            "description": "我是描述我是描述",
+            "choice": [],
+            "data": ""
+        },
+        {
+            "id": 6,
+            "type": 6,
+            "name": "日期段",
+            "description": "我是描述我是描述",
+            "choice": [],
+            "data": ""
+        },
+        {
+            "id": 7,
+            "type": 7,
+            "name": "郵箱",
+            "description": "我是描述我是描述",
+            "choice": [],
+            "data": ""
+        },
+        {
+            "id": 8,
+            "type": 8,
+            "name": "郵編",
+            "description": "我是描述我是描述",
+            "choice": [],
+            "data": ""
+        },
+        {
+            "id": 9,
+            "type": 9,
+            "name": "固定電話",
+            "description": "我是描述我是描述",
+            "choice": [],
+            "data": ""
+        },
+        {
+            "id": 10,
+            "type": 10,
+            "name": "移動電話",
+            "description": "我是描述我是描述",
+            "choice": [],
+            "data": ""
+        },
+        {
+            "id": 11,
+            "type": 11,
+            "name": "身份證號碼",
+            "description": "我是描述我是描述",
+            "choice": [],
+            "data": ""
+        },
+        {
+            "id": 14,
+            "type": 14,
+            "name": "香港身份证",
+            "description": "我是描述我是描述",
+            "choice": [],
+            "data": ""
+        },
+        {
+            "id": 151,
+            "type": 15,
+            "name": "澳门身份证",
+            "description": "我是描述我是描述",
+            "choice": [],
+            "data": ""
+        },
+        {
+            "id": 152,
+            "type": 16,
+            "name": "台湾身份证",
+            "description": "我是描述我是描述",
+            "choice": [],
+            "data": ""
+        },
+        {
+            "id": 153,
+            "type": 17,
+            "name": "外国护照",
+            "description": "我是描述我是描述",
+            "choice": [],
+            "data": ""
+        },
+        {
+            "id": 154,
+            "type": 18,
+            "name": "其他证件",
+            "description": "我是描述我是描述",
+            "choice": [],
+            "data": ""
+        },
+        {
+            "id": 155,
+            "type": 12,
+            "name": "证件类型类型",
+            "description": "我是描述我是描述",
+            "choice": [
+                { "name": "中华人民共和国居民身份证" },
+                { "name": "香港有效身份证件" },
+                { "name": "澳门有效身份证件" },
+                { "name": "台湾有效身份证件" },
+                { "name": "外国（地区）护照" },
+                { "name": "其他" }
+            ],
+            "data": ""
+        },
+        {
+            "id": 32,
+            "type": 19,
+            "name": "联动身份证",
+            "description": "我是描述我是描述",
+            "linkage": [155],
+            "choice": [],
+            "data": ""
+        },
+        {
+            "id": 126,
+            "type": 13,
+            "name": "联动下拉",
+            "description": "我是描述我是描述",
+            "choice": [
+                { "name": "下拉1","child":[ { "name":"我是下拉1儿子" } ] },
+                { "name": "下拉2","child":[] }
+            ],
+            "data": [],
+            "dataArray": []
+        },
+        {
+            "id": 127,
+            "type": 3,
+            "name": "身份证",
+            "description": "我是描述我是描述",
+            "choice": [
+                { "name": "下拉1" },
+                { "name": "下拉2" }
+            ],
+            "data": ""
+        },
+        {
+            "id": 138,
+            "type": 2,
+            "name": "多个INPUT的多选框",
+            "description": "我是描述我是描述",
+            "choice": [
+                { 
+                    "name": "多选1",
+                    "child": [
+                        {
+                            "name": "型号",
+                            "data": "",
+                            "required": true
+                        }
+                    ]
+                },
+                { 
+                    "name": "多选2",
+                    "child": [
+                        {
+                            "name": "型号",
+                            "data": "",
+                            "required": true
+                        },
+                        {
+                            "name": "数量",
+                            "data": ""
+                        }
+                    ]
+                }
+            ],
+            "data": [],
+            "dataArray":[]
+        },
+        {
+            "id": 51,
+            "type": 1,
+            "name": "外设仓库",
+            "description": "我是描述我是描述",
+            "choice": [
+                { 
+                    "name": "有",
+                    "child": [
+                        {
+                            "name": "",
+                            "data": ""
+                        }
+                    ]
+                },
+                { 
+                    "name": "无",
+                    "child": [
+                    ]
+                }
+            ],
+            "data": ""
+        },
+        {
+            "id": 99,
+            "type": "",
+            "name": "組合",
+            "description": "我是描述我是描述",
+            "choice": [],
+            "combination": 1,
+            "child": [
+                [
+                    {
+                        "id": 56,
+                        "type": 3,
+                        "name": "文本",
+                        "description": "我是描述我是描述",
+                        "choice": [],
+                        "data": ""
+                    },
+                    {
+                        "id": 1,
+                        "type": 1,
+                        "name": "父判断名称",
+                        "description": "我是描述我是描述",
+                        "choice": [
+                            {
+                                "name": "选项值1"
+                            },
+                            {
+                                "name": "选项值2"
+                            },
+                            {
+                                "name": "选项值3"
+                            }
+                        ],
+                        "data": ""
+                    },
+                    {
+                        "id": 2,
+                        "type": 2,
+                        "name": "超市类型",
+                        "description": "我是描述我是描述",
+                        "choice": [
+                            {
+                                "name": "小型超市"
+                            },
+                            {
+                                "name": "标准超市"
+                            },
+                            {
+                                "name": "大型超市"
+                            }
+                        ],
+                        "data": [],
+                        "dataArray": []
+                    },
+                    {
+                        "id": 12,
+                        "type": 11,
+                        "name": "身份证",
+                        "description": "我是描述我是描述",
+                        "choice": [],
+                        "data": ""
+                    },
+                    {
+                        "id": 12,
+                        "type": 12,
+                        "name": "下拉類型",
+                        "description": "我是描述我是描述",
+                        "choice": [
+                            { "name": "下拉1" },
+                            { "name": "下拉2" }
+                        ],
+                        "data": ""
+                    },
+                    {
+                        "id": 33,
+                        "type": 12,
+                        "name": "证件类型",
+                        "description": "我是描述我是描述",
+                        "choice": [
+                            { "name": "中华人民共和国居民身份证" },
+                            { "name": "香港有效身份证件" },
+                            { "name": "澳门有效身份证件" },
+                            { "name": "台湾有效身份证件" },
+                            { "name": "外国（地区）护照" },
+                            { "name": "其他" }
+                        ],
+                        "data": ""
+                    },
+                    {
+                        "id": 32,
+                        "type": 19,
+                        "name": "联动身份证",
+                        "description": "我是描述我是描述",
+                        "linkage": [33],
+                        "choice": [],
+                        "data": ""
+                    }
+                ]
+            ],
+            "data": ""
+        }
+    ]
+}

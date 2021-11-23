@@ -1,0 +1,9 @@
+diff a/src/components/selectStreet.js b/src/components/selectStreet.js	(rejected hunks)
+@@ -25,6 +25,7 @@
+ // 判断是否是C厅
+ export function IsXuhui() {
+   let street = Vue.prototype.getSession("terminalCode");
++>>>>>>> 30705c37764b398bb211852c201b02d812d65b5a
+   let result = true; //默认是C厅
+   streets.forEach(element => {
+     if (element.name == street) {
